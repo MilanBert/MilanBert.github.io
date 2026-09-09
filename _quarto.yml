@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "project_website"
+  title: "Milan Bertolutti"
   navbar:
     left:
       - href: index.qmd
