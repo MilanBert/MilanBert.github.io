@@ -2,4 +2,14 @@
 title: "About"
 ---
 
-About this site
+## Background
+
+I grew up in British Columbia and spent my undergrad years in Kelowna. Most of my time there went into building things: a capstone project where a team of seven of us built a TA allocation and management system for a university department, and an ongoing deep learning project on reading jersey numbers off soccer and hockey video. Alongside school I do freelance web development, and over the past year I have redesigned and rebuilt the portfolio sites for two different companies, which taught me as much about talking to clients as it did about code.
+
+## Why data science
+
+The turning point was a course project where the hard part was not the model, it was figuring out what the data actually meant. I liked that the answer was not in the assignment and had to be argued for. Coming from a software background, I am comfortable building the pipelines and interfaces around data, but I wanted to be the person deciding what goes through them rather than the one plumbing it together, and that is what pulled me toward statistics and modelling.
+
+## Outside of data science
+
+I climb indoors a few times a week, play men's league and intramural basketball, and golf!

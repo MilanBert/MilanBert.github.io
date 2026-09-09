@@ -1,0 +1,9 @@
+---
+title: "My first weeks in MDS"
+author: "Your Name"
+date: 2026-09-10
+---
+
+My first few weeks within the MDS program have been amazing. The people and faculty are awsome! Even coming from a computer and data science backround I have learned alot and refine some skills that I had spead though or glossed over in my undergrad. A strong foundation is very inportant in anything and I alwys reach for an opertunity to refine my own. 
+
+![](../../images/mdslogopad.png)

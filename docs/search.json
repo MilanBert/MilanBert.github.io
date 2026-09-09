@@ -1,16 +1,58 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Blog",
     "section": "",
-    "text": "About this site"
+    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 10, 2026\n\n\nYour Name\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "project_website",
+    "title": "Milan Bertolutti",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "My name is Milan Bertolutti. I started UBC’s Masters of Data Science after graduating from UBC Okanagan, where I completed my Bachelor’s in Computer Science with a minor in Data Science. I chose this program because I really enjoyed my DATA courses during my minor and wanted to learn more. What I am looking for from MDS is more experience working with real-world data."
+  },
+  {
+    "objectID": "index.html#milan-bertolutti",
+    "href": "index.html#milan-bertolutti",
+    "title": "Milan Bertolutti",
+    "section": "",
+    "text": "My name is Milan Bertolutti. I started UBC’s Masters of Data Science after graduating from UBC Okanagan, where I completed my Bachelor’s in Computer Science with a minor in Data Science. I chose this program because I really enjoyed my DATA courses during my minor and wanted to learn more. What I am looking for from MDS is more experience working with real-world data."
+  },
+  {
+    "objectID": "posts/first-weeks/index.html",
+    "href": "posts/first-weeks/index.html",
+    "title": "My first weeks in MDS",
+    "section": "",
+    "text": "My first few weeks within the MDS program have been amazing. The people and faculty are awsome! Even coming from a computer and data science backround I have learned alot and refine some skills that I had spead though or glossed over in my undergrad. A strong foundation is very inportant in anything and I alwys reach for an opertunity to refine my own."
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I grew up in British Columbia and spent my undergrad years in Kelowna. Most of my time there went into building things: a capstone project where a team of seven of us built a TA allocation and management system for a university department, and an ongoing deep learning project on reading jersey numbers off soccer and hockey video. Alongside school I do freelance web development, and over the past year I have redesigned and rebuilt the portfolio sites for two different companies, which taught me as much about talking to clients as it did about code."
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About",
+    "section": "",
+    "text": "I grew up in British Columbia and spent my undergrad years in Kelowna. Most of my time there went into building things: a capstone project where a team of seven of us built a TA allocation and management system for a university department, and an ongoing deep learning project on reading jersey numbers off soccer and hockey video. Alongside school I do freelance web development, and over the past year I have redesigned and rebuilt the portfolio sites for two different companies, which taught me as much about talking to clients as it did about code."
+  },
+  {
+    "objectID": "about.html#why-data-science",
+    "href": "about.html#why-data-science",
+    "title": "About",
+    "section": "Why data science",
+    "text": "Why data science\nThe turning point was a course project where the hard part was not the model, it was figuring out what the data actually meant. I liked that the answer was not in the assignment and had to be argued for. Coming from a software background, I am comfortable building the pipelines and interfaces around data, but I wanted to be the person deciding what goes through them rather than the one plumbing it together, and that is what pulled me toward statistics and modelling."
+  },
+  {
+    "objectID": "about.html#outside-of-data-science",
+    "href": "about.html#outside-of-data-science",
+    "title": "About",
+    "section": "Outside of data science",
+    "text": "Outside of data science\nI climb indoors a few times a week, play men’s league and intramural basketball, and golf!"
   }
 ]
