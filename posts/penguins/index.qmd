@@ -6,8 +6,63 @@ date: 2026-09-10
 
 Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/), Palmer Station Antarctica LTER.
 
-```{python}
-import sys
-print(sys.executable)
+Load the data.
 
+```{python}
+# setup
+from palmerpenguins import load_penguins
+import pandas as pd
+import matplotlib.pyplot as plt
+
+penguins = load_penguins()
+penguins.head()
 ```
+
+Let's look at what penguin species and island types that we have in our data.
+
+```{python}
+penguins["species"].value_counts().sort_index()
+```
+
+```{python}
+penguins["island"].value_counts().sort_index()
+```
+
+For this analysis, we are only going to be looking at the Adelie penguins, as they are the only ones that are observed on all of the islands.
+
+```{python}
+penguins_adelie = penguins[penguins["species"] == "Adelie"]
+penguins_adelie
+```
+
+Something that I would like to explore is how the penguins found on each island's data differs.
+
+Let's start by exploring the body mass and flipper length.
+```{python}
+for island, group in penguins_adelie.groupby("island"):
+    plt.scatter(group["flipper_length_mm"], group["body_mass_g"], label=island, alpha=0.7)
+
+plt.xlabel("Flipper length (mm)")
+plt.ylabel("Body mass (g)")
+plt.title("Adelie penguins by island")
+plt.legend(title="Island")
+plt.show()
+```
+
+No clear categories here. The island that each of the penguins is found on must not determine size.
+
+Let's look at another case. This time, looking at just the males on all of the 3 islands. Looking at flipper length and bill depth.
+```{python}
+adelie_males = penguins_adelie[penguins_adelie["sex"] == "male"]
+
+for island, group in adelie_males.groupby("island"):
+    plt.scatter(group["flipper_length_mm"], group["bill_depth_mm"], label=island, alpha=0.7)
+
+plt.xlabel("Flipper length (mm)")
+plt.ylabel("Bill depth (mm)")
+plt.title("Male Adelie penguins by island")
+plt.legend(title="Island")
+plt.show()
+```
+
+Interestingly here we can see some defined groups starting to form based off which island the penguins come from. Maybe this is something to investigate in the future.
