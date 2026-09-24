@@ -4,6 +4,8 @@ author: "Milan Bertolutti"
 date: 2026-09-10
 ---
 
+Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/), Palmer Station Antarctica LTER.
+
 ```{python}
 import sys
 print(sys.executable)

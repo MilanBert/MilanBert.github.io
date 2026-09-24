@@ -25,7 +25,7 @@
     "href": "posts/penguins/index.html",
     "title": "Penguin Analysis",
     "section": "",
-    "text": "import sys\nprint(sys.executable)\n\n/Users/milan/Documents/MDS/Block 1/Projects/mds/521/MilanBert.github.io/.venv/bin/python3"
+    "text": "Data: Palmer Penguins, Palmer Station Antarctica LTER.\n\nimport sys\nprint(sys.executable)\n\n/Users/milan/Documents/MDS/Block 1/Projects/mds/521/MilanBert.github.io/.venv/bin/python3"
   },
   {
     "objectID": "posts/first-weeks/index.html",
@@ -67,6 +67,6 @@
     "href": "posts/baby-names/index.html",
     "title": "Baby Names Analysis",
     "section": "",
-    "text": "#setup-chunk\nlibrary(babynames)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union"
+    "text": "Data: babynames, from US Social Security Administration records. Licence: CC0.\n\n#setup-chunk\nlibrary(babynames)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union"
   }
 ]
