@@ -4,7 +4,7 @@
     "href": "blog.html",
     "title": "Blog",
     "section": "",
-    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 10, 2026\n\n\nYour Name\n\n\n\n\n\nNo matching items"
+    "text": "My first weeks in MDS\n\n\n\n\n\n\n\n\nSep 10, 2026\n\n\nYour Name\n\n\n\n\n\n\n\n\n\n\n\n\nPenguin Analysis\n\n\n\n\n\n\n\n\nSep 10, 2026\n\n\nMilan Bertolutti\n\n\n\n\n\n\n\n\n\n\n\n\nBaby Names Analysis\n\n\n\n\n\n\n\n\nSep 10, 2026\n\n\nMilan Bertolutti\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -19,6 +19,13 @@
     "title": "Milan Bertolutti",
     "section": "",
     "text": "My name is Milan Bertolutti. I started UBC’s Masters of Data Science after graduating from UBC Okanagan, where I completed my Bachelor’s in Computer Science with a minor in Data Science. I chose this program because I really enjoyed my DATA courses during my minor and wanted to learn more. What I am looking for from MDS is more experience working with real-world data."
+  },
+  {
+    "objectID": "posts/penguins/index.html",
+    "href": "posts/penguins/index.html",
+    "title": "Penguin Analysis",
+    "section": "",
+    "text": "import sys\nprint(sys.executable)\n\n/Users/milan/Documents/MDS/Block 1/Projects/mds/521/MilanBert.github.io/.venv/bin/python3"
   },
   {
     "objectID": "posts/first-weeks/index.html",
@@ -54,5 +61,12 @@
     "title": "About",
     "section": "Outside of data science",
     "text": "Outside of data science\nI climb indoors a few times a week, play men’s league and intramural basketball, and golf!"
+  },
+  {
+    "objectID": "posts/baby-names/index.html",
+    "href": "posts/baby-names/index.html",
+    "title": "Baby Names Analysis",
+    "section": "",
+    "text": "#setup-chunk\nlibrary(babynames)\nlibrary(dplyr)\n\n\nAttaching package: 'dplyr'\n\n\nThe following objects are masked from 'package:stats':\n\n    filter, lag\n\n\nThe following objects are masked from 'package:base':\n\n    intersect, setdiff, setequal, union"
   }
 ]

@@ -1,0 +1,11 @@
+---
+title: "Penguin Analysis"
+author: "Milan Bertolutti"
+date: 2026-09-10
+---
+
+```{python}
+import sys
+print(sys.executable)
+
+```

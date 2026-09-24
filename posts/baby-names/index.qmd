@@ -1,0 +1,12 @@
+---
+title: "Baby Names Analysis"
+author: "Milan Bertolutti"
+date: 2026-09-10
+---
+
+```{r}
+#setup-chunk
+library(babynames)
+library(dplyr)
+
+```
