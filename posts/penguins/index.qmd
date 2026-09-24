@@ -9,6 +9,8 @@ Data: [Palmer Penguins](https://allisonhorst.github.io/palmerpenguins/), Palmer 
 Load the data.
 
 ```{python}
+#| message: false
+#| warning: false
 # setup
 from palmerpenguins import load_penguins
 import pandas as pd
@@ -39,6 +41,8 @@ Something that I would like to explore is how the penguins found on each island'
 
 Let's start by exploring the body mass and flipper length.
 ```{python}
+#| label: fig-adelie-mass
+#| fig-cap: "Body mass and flipper length of Adelie penguins by island."
 for island, group in penguins_adelie.groupby("island"):
     plt.scatter(group["flipper_length_mm"], group["body_mass_g"], label=island, alpha=0.7)
 
@@ -53,6 +57,8 @@ No clear categories here. The island that each of the penguins is found on must 
 
 Let's look at another case. This time, looking at just the males on all of the 3 islands. Looking at flipper length and bill depth.
 ```{python}
+#| label: fig-adelie-males
+#| fig-cap: "Flipper length and bill depth of male Adelie penguins by island."
 adelie_males = penguins_adelie[penguins_adelie["sex"] == "male"]
 
 for island, group in adelie_males.groupby("island"):
