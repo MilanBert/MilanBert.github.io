@@ -38,8 +38,9 @@ R
 ```r
 renv::restore()
 ```
+If you would like to install the packages accept with `Y`s
 
-optionally type `q()` to quit R when it finishes.
+optionally type `q()` to quit R when it finishes. no need to save the workspace image.
 
 4. Build the site (in the terminal, from the project folder):
 

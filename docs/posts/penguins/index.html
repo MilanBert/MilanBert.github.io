@@ -197,7 +197,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <p>Data: <a href="https://allisonhorst.github.io/palmerpenguins/">Palmer Penguins</a>, Palmer Station Antarctica LTER.</p>
 <p>Load the data.</p>
-<div id="d190268d" class="cell" data-execution_count="1">
+<div id="bb4820ee" class="cell" data-message="false" data-execution_count="1">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># setup</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> palmerpenguins <span class="im">import</span> load_penguins</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
@@ -286,7 +286,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 <p>Let’s look at what penguin species and island types that we have in our data.</p>
-<div id="c145eda2" class="cell" data-execution_count="2">
+<div id="3b7beb0b" class="cell" data-execution_count="2">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>penguins[<span class="st">"species"</span>].value_counts().sort_index()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="2">
 <pre><code>species
@@ -296,7 +296,7 @@ Gentoo       124
 Name: count, dtype: int64</code></pre>
 </div>
 </div>
-<div id="7dfddc25" class="cell" data-execution_count="3">
+<div id="1722b556" class="cell" data-execution_count="3">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>penguins[<span class="st">"island"</span>].value_counts().sort_index()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>island
@@ -307,7 +307,7 @@ Name: count, dtype: int64</code></pre>
 </div>
 </div>
 <p>For this analysis, we are only going to be looking at the Adelie penguins, as they are the only ones that are observed on all of the islands.</p>
-<div id="723746bd" class="cell" data-execution_count="4">
+<div id="e187dcc3" class="cell" data-execution_count="4">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>penguins_adelie <span class="op">=</span> penguins[penguins[<span class="st">"species"</span>] <span class="op">==</span> <span class="st">"Adelie"</span>]</span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>penguins_adelie</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display" data-execution_count="4">
@@ -459,7 +459,7 @@ Name: count, dtype: int64</code></pre>
 </div>
 <p>Something that I would like to explore is how the penguins found on each island’s data differs.</p>
 <p>Let’s start by exploring the body mass and flipper length.</p>
-<div id="bbeb9dba" class="cell" data-execution_count="5">
+<div id="cell-fig-adelie-mass" class="cell" data-execution_count="5">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> island, group <span class="kw">in</span> penguins_adelie.groupby(<span class="st">"island"</span>):</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    plt.scatter(group[<span class="st">"flipper_length_mm"</span>], group[<span class="st">"body_mass_g"</span>], label<span class="op">=</span>island, alpha<span class="op">=</span><span class="fl">0.7</span>)</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -469,16 +469,21 @@ Name: count, dtype: int64</code></pre>
 <span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a>plt.legend(title<span class="op">=</span><span class="st">"Island"</span>)</span>
 <span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/cell-6-output-1.png" width="602" height="451" class="figure-img"></p>
+<div id="fig-adelie-mass" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-adelie-mass-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="index_files/figure-html/fig-adelie-mass-output-1.png" width="602" height="451" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-adelie-mass-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: Body mass and flipper length of Adelie penguins by island.
+</figcaption>
 </figure>
 </div>
 </div>
 </div>
 <p>No clear categories here. The island that each of the penguins is found on must not determine size.</p>
 <p>Let’s look at another case. This time, looking at just the males on all of the 3 islands. Looking at flipper length and bill depth.</p>
-<div id="063443f2" class="cell" data-execution_count="6">
+<div id="cell-fig-adelie-males" class="cell" data-execution_count="6">
 <div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a>adelie_males <span class="op">=</span> penguins_adelie[penguins_adelie[<span class="st">"sex"</span>] <span class="op">==</span> <span class="st">"male"</span>]</span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> island, group <span class="kw">in</span> adelie_males.groupby(<span class="st">"island"</span>):</span>
@@ -490,9 +495,14 @@ Name: count, dtype: int64</code></pre>
 <span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a>plt.legend(title<span class="op">=</span><span class="st">"Island"</span>)</span>
 <span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <div class="cell-output cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="index_files/figure-html/cell-7-output-1.png" width="585" height="451" class="figure-img"></p>
+<div id="fig-adelie-males" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-adelie-males-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="index_files/figure-html/fig-adelie-males-output-1.png" width="585" height="451" class="figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-adelie-males-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;2: Flipper length and bill depth of male Adelie penguins by island.
+</figcaption>
 </figure>
 </div>
 </div>
