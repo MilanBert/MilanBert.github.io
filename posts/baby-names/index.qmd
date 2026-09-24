@@ -12,7 +12,35 @@ library(babynames)
 library(dplyr)
 ```
 
-```{r}
+We will start are analysis by looking at the data set.
 
+```{r}
+babynames
+```
+
+Lets start by viewing some of the most popular names scaled with the amount of baby born each year (prop)
+
+```{r}
+baby_names_sorted <- babynames |> arrange(desc(prop))
+
+head(baby_names_sorted, 10)
+```
+
+Lets now check out how popular my name has been over the years, scaled with birth rate of course:
+
+```{r}
+my_name_sorted <- babynames |> filter(tolower(name) == "milan") |> arrange(desc(prop))
+
+my_name_sorted
+```
+
+It looks like my name is getting more popular, and used to be more popular then it was at the end of the 20th century! Talk about being a trend setter in this new age.
+
+I have always wondered if my name has been more popular as a female or a male name. Lets get to the bottom of this. 
+
+```{r}
+my_name_by_sex <- my_name_sorted |> group_by(sex) |> summarise(total_per_sex = sum(n))
+
+my_name_by_sex
 ```
 
